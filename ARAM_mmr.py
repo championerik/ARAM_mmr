@@ -34,12 +34,6 @@ class top500_url:
     eune = f"https://aram.moe/eune"
 
 
-
-def jsonprint(obj):
-    # create a formatted string of the Python JSON object
-    text = json.dumps(json.loads(response), indent=4, sort_keys=True)
-    print(text)
-
 def getaramrank(USERNAME, CHAMPION, TEAM, curruser, mmrregion, top500region):
     rank = requests.get((mmrregion).format(USERNAME)).text
     response = json.loads(rank)
@@ -87,7 +81,7 @@ def gettop500(top500region):
 
 class program:
 
-    print("Copyright hold by © 2022 Erik Börner\nContact: championerik#4209\n")
+    print("Copyright hold by ï¿½ 2022 Erik Bï¿½rner\nContact: championerik#4209\n")
     print(style.CYAN + "--------------------------------" + style.BLUE + "MMR Reader" + style.CYAN +"--------------------------------" + style.RESET)     
     inputregion = input("What region are you in? (euw, na, eune): ")
     print(style.YELLOW + "\nTrying to connect to client 127.0.0.1" + style.RESET)
